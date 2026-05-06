@@ -1,1 +1,3 @@
-print(5+5.0)
+name = "Helen"
+age = 15
+print(name, "is", age)
