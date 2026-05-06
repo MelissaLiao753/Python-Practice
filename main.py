@@ -1,3 +1,2 @@
-name = "Helen"
-age = 15
-print(name, "is", age)
+age = input("Age?")
+print("Birth year:", 2026 - int(age))
