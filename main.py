@@ -1,2 +1,1 @@
-print("Name?")
-input()
+print(5+5.0)
