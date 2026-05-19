@@ -71,24 +71,23 @@ else:
 print("You finished the quiz!. You scored", score, "points.")
 
 #Responses in terminal based on score
-if score > 0 and score < 2:
-    print("You did average. Try again?")
-    print("(￣_￣|||)")
-
-if score > 1 and score < 5:
-    print("You did pretty good!")
-    print("ƪ(˘⌣˘)ʃ")
-
-
 if score == 5:
     print("Wow! You got them all correct! Goodjob.")
     print("(o゜▽゜)o☆")
 
-if score > -4 and score < 0:
+elif score > 0 and score < 2:
+    print("You did average. Try again?")
+    print("(￣_￣|||)")
+
+elif score > 1 and score < 5:
+    print("You did pretty good!")
+    print("ƪ(˘⌣˘)ʃ")
+
+elif score > -4 and score < 0:
     print("You did pretty bad. You should try again.")
     print("╮（╯＿╰）╭")
 
-if score < -3:
+elif score < -3:
     print("General trivia isn't your thing.")
     print("（；´д｀）ゞ")
 
