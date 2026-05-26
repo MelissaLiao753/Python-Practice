@@ -10,7 +10,7 @@ answer_5 = "b"
 
 # Introduction
 name = input("What's your name?")
-print("Hi", name + "!")
+print(f"Hi {name}!")
 print("You're going to play a quiz. There are 5 random trivia questions to answer, and they get progressively harder. Your score will be shown at the end. You can only answer with yes or no. Goodluck", name)
 
 # Question 1 : Pacific Ocean 
