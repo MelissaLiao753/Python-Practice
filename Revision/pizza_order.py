@@ -9,7 +9,6 @@ discount_price= original_price - (original_price/100 * promo)
 
 print("Hi welcome to Prime Pizzaria.")
 pizza_type = input(f"Which kind of pizza would you like to order? We have {extra_toppings}")
-if pizza_type = ""
 order_toppings = input("Would you like any extra toppings?")
 #Create a program for ordering pizza. 
 #Users should be able to:
