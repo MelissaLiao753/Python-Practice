@@ -1,7 +1,9 @@
 # Variables & Constants
 score = 0
-ART_CORRECT = "(●'◡'●)"
+
+ART_CORRECT = "( '◡' )"
 ART_INCORRECT = "( ˘︹˘ )"
+
 answer_1 = "yes"
 answer_2 = "no"
 answer_3 = "no"
