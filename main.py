@@ -1,3 +1,3 @@
-name = 'Paul'
-age = 15
-print(f'{name} is {age}')
+import random
+print(random.random())
+print(random.randint(0,10))
