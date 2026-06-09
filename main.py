@@ -1,6 +1,8 @@
-user_input = '2'
-try:
-    num = int(user_input)
-    print(f'You picked {num}')
-except:
-	print(f'{user_input} is not a number!')
+
+while True:
+    guess = input('Guess a country: ')
+    if guess.lower().strip() == 'malawi':
+        break
+    print('Try again.')
+
+print('Well done!')
