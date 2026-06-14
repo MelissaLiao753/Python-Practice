@@ -1,3 +1,3 @@
-import random
-shopping_list = ['apples','plums','pizza']
-print(shopping_list[random.randint(0,2)])
+foods = ['apples','carrots','muesli']
+for i in range(len(foods)):
+    print(f'{i+1}.{foods[i]}')
