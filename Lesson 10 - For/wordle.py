@@ -3,54 +3,57 @@
 # Create a program where the user must guess the 5 letter word.
 # =====================================================================
 
-# TOOLS
-# TODO Import random so you can randomise the word
+#IMPORT RANDOM
 import random
 
 # VALUES
-# TODO Create a list of at least 5 different 5-letter words
+#LIST OF 5 FIVE-LETTER-WORDS
 words = ["horse", "magic", "ocean", "flute", "apple"]
-# TODO Create a variable called play and set it to True
+
+#PLAY
 play = True
 
 # INTRODUCTION
-# TODO Tell your user how to play wordle (make sure they know they must input 5 letter words)
 print("Hi! Let's play wordle. In order to play, you must type in one of these 5 words. These words are : 1) horse 2) magic 3) ocean 4) flute 5) apple")
 # MAIN
-# TODO Create a while loop that runs if play is true
+#WHILE LOOPS THAT RUNS IF PLAY == TRUE
 while play == True:
-    # TODO Create word variable and store a random word from your list (using random.choice)
+    #CHOOSING RANDOM SECRET WORD FROM THE LIST
     secret_word = random.choice(words)
-    # USER INPUT
-    # TODO Get user's first guess and save it into a variable
+    #USER INPUTS FIRST GUESS
     user_input = input("What word do you guess?").lower().strip()
-    # TODO Create a while loop if the guess is not 5 characters long
-    while len(user_input) != 5:
-        # TODO Tell them it's not 5 letters and to try again
-        print("That's not 5 letters, try again with one of the 6 words I said earlier.")
+
+    #WHILE LOOP IF USER INPUT WASN'T A FIVE LETTER WORD
+    while 5!= len(user_input) :
+        #TELLING USER THEIR GUESS WAS NOT A FIVE LETTER WORD
+        print("That's not 5 letters, try again with one of the 5 words I said earlier.")
+        #ASKING FOR THE USER'S GUESS FOR THE SECRET WORD AGAIN
         user_input = input("What word do you guess?").lower().strip()
+    #IF USER INPUT GUESSED THE CORRECT WORD
     if user_input == secret_word:
         print("You guessed it correctly! It was", secret_word)
+        break
         
-
-    # TODO Check if they got it correct and if they did, tell them so and then break the loop
     else:
-    # TODO Create a for loop that loops 5 times
+        #LOOPS 5 TIMES
         for i in range(5):
+            #IF THE LETTER AND POSITION IN THE CORRECT PLACE (INDEX)
             if (user_input[i]) == secret_word[i]:
-                print("You got the letter i correct! It's the right letter and it's in the right position.")
-            # TODO Check if the current letter of user_input (user_input[i]) is the same as the i letter of the word and if it is tell them they got that letter correct
+                print("You got the letter correct! It's the right letter and it's in the right position.")
+
+            #IF THEY GOT THE LETTER CORRECT BUT NOT THE POSITION
             elif (user_input[i]) in secret_word:
                 print("You got the correct letter, but it's in the wrong position.")
-            # TODO Otherwise check if the current letter of user_input is in the word and if it is, tell them that letter is in the wrong position
+
+            #WRONG LETTER AND POSITION
             else:
                 print("You got the letter wrong.")
 
-            # TODO Else tell them that letter is wrong
-
-play_again = input("Do you want to play again? yes/no").strip().lower()
-if play_again == "no":
-    play = False
+                
+    #OPTION TO PLAY AGAIN
+    play_again = input("Do you want to play again? yes/no").strip().lower()
+    if play_again == "no":
+        play = False
 # TODO Ask if they want to play again. If they don't, set play to false.
 
 
