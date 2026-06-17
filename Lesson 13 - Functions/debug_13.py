@@ -1,6 +1,6 @@
 security_status = "LOCKED"
 alarm_sound = "SIREN"
-
+#ALARM SECURITY
 def trigger_alarm():
     print(f"Alert! Sounding the {alarm_sound}")
 def check_system():
@@ -21,5 +21,5 @@ def main():
     print(f"The current alarm sound is: {alarm_sound}")
     check_system()
     reset_system()
-
+#EXECUTE CODE
 main()
